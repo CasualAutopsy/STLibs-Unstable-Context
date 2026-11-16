@@ -1,9 +1,9 @@
 {
     "display_name": "Unstable ST Context",
     "loading_order": 1,
-    "js": "index.js",
+    "js": "dist/main.bundled.js",
     "author": "EquinoxPsychosis",
-    "version": "0.1.0",
+    "version": "1.0.0",
     "homePage": "https://github.com/CasualAutopsy/STLibs-Unstable-Context",
     "auto_update": false
 }

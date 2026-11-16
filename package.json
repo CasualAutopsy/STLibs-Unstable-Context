@@ -1,6 +1,6 @@
 {
   "name": "stlibs-unstable-context",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "",
   "homepage": "https://github.com/CasualAutopsy/STLibs-Unstable-Context#readme",
   "bugs": {
@@ -13,6 +13,7 @@
   "author": "EquinoxPsychosis",
   "type": "module",
   "scripts": {
+    "build": "webpack --mode production",
     "lint": "eslint ./",
     "lint:fix": "eslint ./ --fix"
   },
@@ -23,7 +24,9 @@
     "eslint-markdown": "^0.22.0",
     "eslint-plugin-jsdoc": "^65.4.6",
     "globals": "^17.14.0",
+    "ts-loader": "^9.6.2",
     "typescript": "^6.0.3",
-    "typescript-eslint": "^8.72.2"
+    "typescript-eslint": "^8.72.2",
+    "webpack-cli": "^7.3.1"
   }
 }

@@ -15,7 +15,8 @@ Since this is a developer resource, the library does nothing on it's own, and is
 For developers that want to use this as a dependency, usage is quite simple:
 
 ```js
-const unst_ctx = getUnstableSTContext();
+const st_script = getUnstableContext.module('@script');
+const closure_helpers = getUnstableContext.category('$SlashCommand/Closures');
 ```
 
 The function is in the `globalThis` object, so no import is needed.
@@ -27,10 +28,11 @@ import '../STLibs-Unstable-Context/libs';
 
 And don't forget to add this library as a dependency to your `manifest.json`! It can be done like so:
 
-```json5
+```json
 {
     // ...The rest of your manifest config here.
     "dependencies": [
+        // ...The rest of your dependencies here.
         "third-party/STLibs-Unstable-Context"
     ],
 }
