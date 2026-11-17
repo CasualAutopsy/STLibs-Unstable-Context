@@ -17,7 +17,7 @@ export default defineConfig([
     { files: ['**/*.{js,mjs,cjs,jsx,ts,tsx,md}'] },
     { files: ['**/*.{js,mjs,cjs,jsx,ts,tsx,md}'], languageOptions: { globals: globals.browser } },
     {
-        files: ['**/*.{js,mjs,cjs,jsx}'],
+        files: ['**/*.{js,mjs,cjs,jsx,ts,tsx}'],
         plugins: { js },
         extends: ['js/recommended'],
         rules: {
@@ -46,23 +46,8 @@ export default defineConfig([
             'no-irregular-whitespace': ['error', { skipStrings: true, skipTemplates: true }],
         },
     },
-    {
-        files: ['**/*.d.ts'],
-        plugins: { ts },
-        extends: ['ts/recommendedTypeChecked'],
-        rules: {},
-        languageOptions: {
-            parserOptions: {
-                projectService: true,
-            },
-        },
-    },
-    {
-        files: ['**/*.{js,mjs,cjs,jsx,ts,tsx}'],
-        plugins: { jsdoc },
-        extends: ['jsdoc/flat/recommended-mixed'],
-        rules: {},
-    },
+    { files: ['**/*.{js,mjs,cjs,jsx,ts,tsx}'], plugins: { jsdoc }, extends: ['jsdoc/flat/recommended-mixed'] },
+    { files: ['**/*.{ts,tsx}'], plugins: { ts }, extends: ['ts/recommendedTypeChecked'], languageOptions: { parserOptions: { projectService: true } } },
     {
         files: ['**/*.md'],
         plugins: {

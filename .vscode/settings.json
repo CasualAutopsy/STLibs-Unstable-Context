@@ -1,6 +1,14 @@
 {
     "cSpell.words": [
+        "dragdrop",
+        "fadein",
+        "logit",
+        "logprobs",
+        "slashcommands",
+        "stlibs",
         "STPA",
+        "sysprompt",
+        "textgen",
         "toastr",
         "unst_ctx"
     ]

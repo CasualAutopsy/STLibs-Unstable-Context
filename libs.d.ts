@@ -1,5 +1,10 @@
+import { getUnstableContextModule, getUnstableContextCategory } from './src/core/import';
+
 declare global {
-    function getUnstableSTContext(): ReturnType<typeof import('./index.js').getUnstableSTContext>;
+    var getUnstableContext: {
+        module: typeof getUnstableContextModule;
+        category: typeof getUnstableContextCategory;
+    };
 }
 
 export {};
