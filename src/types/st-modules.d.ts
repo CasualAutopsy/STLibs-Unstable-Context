@@ -69,7 +69,7 @@ export interface STModules {
     '@scripts/streaming-display': typeof import('../../../../../streaming-display.js');
     '@scripts/swipe-picker': typeof import('../../../../../swipe-picker.js');
     '@scripts/sysprompt': typeof import('../../../../../sysprompt.js');
-    '@scripts/system-message': typeof import('../../../../../system-messages.js');
+    '@scripts/system-messages': typeof import('../../../../../system-messages.js');
     '@scripts/tags': typeof import('../../../../../tags.js');
     '@scripts/templates': typeof import('../../../../../templates.js');
     '@scripts/textgen-models': typeof import('../../../../../textgen-models.js');
