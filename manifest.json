@@ -3,7 +3,7 @@
     "loading_order": 1,
     "js": "dist/main.bundled.js",
     "author": "EquinoxPsychosis",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "homePage": "https://github.com/CasualAutopsy/STLibs-Unstable-Context",
     "auto_update": false
 }
