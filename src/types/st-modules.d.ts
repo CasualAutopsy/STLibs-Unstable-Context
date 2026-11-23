@@ -82,6 +82,9 @@ export interface STModules {
     '@scripts/welcome-screen': typeof import('../../../../../welcome-screen.js');
     '@scripts/world-info': typeof import('../../../../../world-info.js');
 
+    // Extensions Folder
+    '@extensions/shared': typeof import('../../../../../extensions/shared.js');
+
     // Macros Folder
     '@macros/macro-system': typeof import('../../../../../macros/macro-system.js');
 

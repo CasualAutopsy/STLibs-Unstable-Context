@@ -32,7 +32,11 @@ function getPath(mod) {
         return ROOT + 'script.js';
     if (mod.startsWith('@scripts'))
         return ROOT + mod.slice(1) + '.js';
-    if (mod.startsWith('@slash-commands') || mod.startsWith('@macros') || mod.startsWith('@autocomplete') || mod.startsWith('@util'))
+    if (mod.startsWith('@slash-commands') ||
+        mod.startsWith('@macros') ||
+        mod.startsWith('@autocomplete') ||
+        mod.startsWith('@util') ||
+        mod.startsWith('@extensions'))
         return ROOT + 'scripts/' + mod.slice(1) + '.js';
     throw new Error(`Cannot find path for module: ${mod}`);
 }
